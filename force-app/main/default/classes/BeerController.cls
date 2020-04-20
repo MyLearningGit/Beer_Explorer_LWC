@@ -97,11 +97,13 @@ public with sharing class BeerController {
     }
 
     public class WrapperClass{
+
         @AuraEnabled
         public Decimal count {get; set;}
         @AuraEnabled
         public String cartId {get; set;}
         @AuraEnabled
         public List<Cart_Item__c> items {get; set;}
+        
     }
 }
