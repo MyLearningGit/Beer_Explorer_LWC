@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/beerList": [
+                "beerList/beerList.js"
+            ],
+            "c/beerSearch": [
+                "beerSearch/beerSearch.js"
+            ],
+            "c/beerTile": [
+                "beerTile/beerTile.js"
+            ],
+            "c/cartDetail": [
+                "cartDetail/cartDetail.js"
+            ],
+            "c/cartItem": [
+                "cartItem/cartItem.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}
