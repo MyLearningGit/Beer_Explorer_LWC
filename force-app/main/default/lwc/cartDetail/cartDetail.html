@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Cart Detail" icon-name="utility:cart">
+        <div class="slds-m-around_small">
+            <div class="c-container">
+                <lightning-layout multiple-rows="true">
+                    <lightning-layout-item padding="around-small" size="12">
+                        <lightning-layout>
+                            <lightning-layout-item padding="around-small" size="9">
+                                <div class="page-section page-main">
+                                    <h2 class="slds-text-title_caps" style="background-color: darkseagreen; font-weight: bold;
+                                        height: 55px; font-size: 19px;line-height: 3;padding: 10px;">SHOPPING
+                                        CART({totalItems} items)
+                                    </h2>
+                                    <template if:true={items}>
+                                        <div class="slds-grid slds-wrao slds-m-top_small">
+                                            <div class="slds-col slds-size_1-of-4">Item Name</div>
+                                            <div class="slds-col slds-size_1-of-4">Price</div>
+                                            <div class="slds-col slds-size_1-of-4">Quantity</div>
+                                            <div class="slds-col slds-size_1-of-4"></div>
+                                        </div>
+                                    </template>
+                                </div>
+                            </lightning-layout-item>
+                            <lightning-layout-item padding="around-small" size="3">
+                                <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">3</div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </div>
+    </lightning-card>
+</template>
